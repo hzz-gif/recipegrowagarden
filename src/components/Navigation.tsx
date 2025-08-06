@@ -10,7 +10,15 @@ export default function Navigation() {
         </Link>
 
         <ul className="nav-menu">
-          <li><Link href="/#recipes" className="nav-link">Recipes</Link></li>
+          <li className="nav-dropdown">
+            <span className="nav-link dropdown-trigger">
+              Recipes <span className="dropdown-arrow">▼</span>
+            </span>
+            <div className="dropdown-menu">
+              <Link href="/#recipes" className="dropdown-link">All Recipes</Link>
+              <Link href="/prismatic-recipes" className="dropdown-link">✨ Prismatic Recipes</Link>
+            </div>
+          </li>
           <li><Link href="/#guide" className="nav-link">Guide</Link></li>
           <li><Link href="/#tips" className="nav-link">Tips</Link></li>
           <li><Link href="/blog" className="nav-link">Blog</Link></li>

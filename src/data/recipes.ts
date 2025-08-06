@@ -2,32 +2,32 @@ import { Recipe } from '@/types/recipe';
 
 export const recipes: Recipe[] = [
   {
-    id: 'soup',
-    name: 'Soup',
-    emoji: '🍲',
-    cookTime: '5 minutes',
-    maxRarity: 'uncommon',
-    variants: [
-      { rarity: 'common', ingredients: 'Carrot x1' },
-      { rarity: 'uncommon', ingredients: 'Sugar Apple x1, Watermelon x1' }
-    ],
-    rewards: 'Basic cooking rewards, Common ingredients'
-  },
-  {
     id: 'salad',
     name: 'Salad',
     emoji: '🥗',
-    cookTime: '8 minutes',
+    cookTime: '4 minutes',
     maxRarity: 'prismatic',
     variants: [
-      { rarity: 'common', ingredients: 'Bamboo x1, Carrot x3' },
-      { rarity: 'rare', ingredients: 'Corn x1, Tomato x1' },
+      { rarity: 'normal', ingredients: 'Tomato x2' },
+      { rarity: 'normal', ingredients: 'Tomato x5' },
+      { rarity: 'normal', ingredients: 'Tomato x1, Carrot x1' },
+      { rarity: 'normal', ingredients: 'Onion x1, Pear x1' },
+      { rarity: 'normal', ingredients: 'Lilac x1, Pear x1, Tomato x1' },
+      { rarity: 'normal', ingredients: 'Tomato x1, Onion x1' },
       { rarity: 'legendary', ingredients: 'Blood Banana x2, Tomato x2' },
-      { rarity: 'mythical', ingredients: 'Tomama x1, Pepper x2' },
-      { rarity: 'divine', ingredients: 'Sugar Apple x4, Tomato x1' },
-      { rarity: 'prismatic', ingredients: 'Bone Blossom x4, Tomato x1' }
+      { rarity: 'legendary', ingredients: 'Bamboo x1, Mango x1, Pineapple x1, Tomato x1, Beanstalk x1' },
+      { rarity: 'legendary', ingredients: 'Bamboo x1, Beanstalk x1, Strawberry x1' },
+      { rarity: 'mythical', ingredients: 'Tomato x1, Prismatic Crop x1' },
+      { rarity: 'mythical', ingredients: 'Tomato x1, Pepper x2' },
+      { rarity: 'mythical', ingredients: 'Bamboo x1, Pepper x1' },
+      { rarity: 'divine', ingredients: 'Tomato x1, Prismatic Crop x3' },
+      { rarity: 'divine', ingredients: 'Bamboo x1, Pepper x1, Prismatic Crop x2' },
+      { rarity: 'divine', ingredients: 'Pineapple x1, Pepper x1, Prismatic Crop x3' },
+      { rarity: 'divine', ingredients: 'Grand Tomato x5' },
+      { rarity: 'prismatic', ingredients: 'Tomato x1, Bone Blossom x4' },
+      { rarity: 'prismatic', ingredients: 'Grand Tomato x1, Bone Blossom x1' }
     ],
-    rewards: 'Health boost, Prismatic rewards'
+    rewards: 'Health boost, Prismatic rewards, Gourmet items'
   },
   {
     id: 'cake',
@@ -36,11 +36,26 @@ export const recipes: Recipe[] = [
     cookTime: '6 minutes',
     maxRarity: 'prismatic',
     variants: [
-      { rarity: 'common', ingredients: 'Strawberry x1, Tomato x1, Corn x1, Apple x1' },
-      { rarity: 'rare', ingredients: 'Watermelon x2, Corn x2' },
+      { rarity: 'normal', ingredients: 'Corn x2, Strawberry x2' },
+      { rarity: 'normal', ingredients: 'Blueberry x2, Corn x1, Tomato x1' },
+      { rarity: 'normal', ingredients: 'Banana x2, Strawberry x2, Pumpkin x1' },
+      { rarity: 'rare', ingredients: 'Corn x2, Watermelon x2' },
+      { rarity: 'rare', ingredients: 'Corn x2, Banana x2, Watermelon x1' },
+      { rarity: 'rare', ingredients: 'Blueberry x1, Grape x1, Apple x1, Corn x1' },
+      { rarity: 'rare', ingredients: 'Tomato x2, Banana x2' },
+      { rarity: 'legendary', ingredients: 'Kiwi x2, Banana x2' },
       { rarity: 'legendary', ingredients: 'Banana x2, Blood Banana x1, Moon Melon x1, Soft Sunshine x1' },
-      { rarity: 'mythical', ingredients: 'Lucky Bamboo x1, Sugar Apple x3, Corn x1' },
-      { rarity: 'prismatic', ingredients: 'Banana x1, Bone Blossom x3, Sugar Apple x1' }
+      { rarity: 'mythical', ingredients: 'Sugar Apple x2, Corn x2' },
+      { rarity: 'mythical', ingredients: 'Sweet Type Crops x4, Corn x1' },
+      { rarity: 'mythical', ingredients: 'Sakura Bush x1, Cacao x1, Corn x1, Giant Pinecone x1, Spiked Mango x1' },
+      { rarity: 'mythical', ingredients: 'Sakura Bush x1, Sugar Apple x1, Corn x1, Bone Blossom x1' },
+      { rarity: 'mythical', ingredients: 'Banana x1, Kiwi x1, Bone Blossom x3' },
+      { rarity: 'divine', ingredients: 'Banana x1, Prismatic Crop x3' },
+      { rarity: 'divine', ingredients: 'Corn x1, Elder Strawberry x2, Sugar Apple x2' },
+      { rarity: 'divine', ingredients: 'Corn x1, Sugar Apple x1, Prismatic Crop x2' },
+      { rarity: 'divine', ingredients: 'Corn x1, Sugar Apple x4' },
+      { rarity: 'prismatic', ingredients: 'Banana x1, Bone Blossom x3' },
+      { rarity: 'prismatic', ingredients: 'Banana x1, Bone Blossom x4' }
     ],
     rewards: 'Divine celebration rewards, Prismatic items'
   },
@@ -51,11 +66,26 @@ export const recipes: Recipe[] = [
     cookTime: '5 minutes',
     maxRarity: 'prismatic',
     variants: [
-      { rarity: 'rare', ingredients: 'Corn x2, Tomato x1, Banana x1' },
+      { rarity: 'normal', ingredients: 'Strawberry x1, Tomato x1, Apple x1' },
+      { rarity: 'normal', ingredients: 'Corn x2, Watermelon x1' },
+      { rarity: 'normal', ingredients: 'Corn x2, Banana x1, Pumpkin x1' },
+      { rarity: 'rare', ingredients: 'Corn x1, Blueberry x1, Apple x1' },
+      { rarity: 'rare', ingredients: 'Watermelon x1, Corn x1' },
+      { rarity: 'rare', ingredients: 'Corn x1, Spiked Mango x1' },
+      { rarity: 'rare', ingredients: 'Tomato x1, Banana x1, Corn x2' },
+      { rarity: 'rare', ingredients: 'Tomato x2, Sugarglaze x1, Rose x2' },
       { rarity: 'legendary', ingredients: 'Corn x1, Serenity x1, Sugar Apple x1' },
-      { rarity: 'mythical', ingredients: 'Corn x1, Sugar Apple x1' },
-      { rarity: 'divine', ingredients: 'Sugarglaze x1, Sugar Apple x2' },
-      { rarity: 'prismatic', ingredients: 'Bone Blossom x4, Sugarglaze x1' }
+      { rarity: 'legendary', ingredients: 'Corn x1, Banana x1, Sugar Apple x1' },
+      { rarity: 'legendary', ingredients: 'Sugarglaze x1, Green Apple x1, Peach x1' },
+      { rarity: 'mythical', ingredients: 'Sugar Apple x2, Corn x1' },
+      { rarity: 'mythical', ingredients: 'Sugar Apple x1, Corn x2' },
+      { rarity: 'mythical', ingredients: 'Cacao x2, Sugarglaze x1' },
+      { rarity: 'mythical', ingredients: 'Sugarglaze x1, Fossilight x1, Enkaku x1, Cactus x1, Beanstalk x1' },
+      { rarity: 'divine', ingredients: 'Banana x1, Prismatic Crop x2' },
+      { rarity: 'divine', ingredients: 'Sugarglaze x1, Prismatic Crop x2' },
+      { rarity: 'divine', ingredients: 'Corn x1, Prismatic Crop x3 (At Least 1 Sweet Type)' },
+      { rarity: 'prismatic', ingredients: 'Bone Blossom x3, Sugar Apple x1, Banana x1' },
+      { rarity: 'prismatic', ingredients: 'Sugarglaze x1, Bone Blossom x4' }
     ],
     rewards: 'Sweet rewards, Prismatic items'
   },
@@ -66,10 +96,14 @@ export const recipes: Recipe[] = [
     cookTime: '5 minutes',
     maxRarity: 'prismatic',
     variants: [
-      { rarity: 'common', ingredients: 'Tomato x2, Corn x1' },
-      { rarity: 'legendary', ingredients: 'Tomato x2, Beanstalk x2, Corn x1' },
+      { rarity: 'normal', ingredients: 'Tomato x2, Corn x1' },
+      { rarity: 'legendary', ingredients: 'Giant Pinecone x2, Tomato x1, Corn x1' },
+      { rarity: 'legendary', ingredients: 'Tomato x1, Corn x1, Cacao x1' },
+      { rarity: 'legendary', ingredients: 'Tomato x1, Corn x1, Elder Strawberry x1' },
+      { rarity: 'mythical', ingredients: 'Tomato x1, Corn x1, Elder Strawberry x1, Sugar Apple x1, Ember Lily x1' },
       { rarity: 'divine', ingredients: 'Bone Blossom x3, Tomato x1, Corn x1' },
-      { rarity: 'prismatic', ingredients: 'Bone Blossom x3, Tomato x1, Violet Corn x1' }
+      { rarity: 'divine', ingredients: 'Prismatic Crop x3, Tomato x1, Corn x1' },
+      { rarity: 'prismatic', ingredients: 'Grand Tomato x1, Sugarglaze x1, Bone Blossom x3' }
     ],
     rewards: 'Divine Seeds, Prismatic rewards'
   },
@@ -80,11 +114,21 @@ export const recipes: Recipe[] = [
     cookTime: '8 minutes',
     maxRarity: 'prismatic',
     variants: [
-      { rarity: 'rare', ingredients: 'Crown Melon x1, Jalapeno x1' },
-      { rarity: 'legendary', ingredients: 'Pumpkin x1, Apple x1' },
-      { rarity: 'mythical', ingredients: 'Sugar Apple x1, Pumpkin x1' },
+      { rarity: 'normal', ingredients: 'Sugar Apple x1, Pumpkin x1, Giant Pinecone x1, Apple x1, Corn x1' },
+      { rarity: 'legendary', ingredients: 'Pumpkin x1, Moon Melon x1' },
+      { rarity: 'legendary', ingredients: 'Pumpkin x1, Giant Pinecone x1, Corn x1, Apple x1' },
+      { rarity: 'legendary', ingredients: 'Pumpkin x1, Pineapple x1' },
+      { rarity: 'legendary', ingredients: 'Jalapeno x1, Taco Fern x1, Tall Asparagus x1, Crown Melon x1, Twisted Tangle x1' },
+      { rarity: 'mythical', ingredients: 'Apple x1, Pumpkin x1' },
+      { rarity: 'mythical', ingredients: 'Pumpkin x1, Beanstalk x1' },
+      { rarity: 'mythical', ingredients: 'Pumpkin x1, Ember Lily x1' },
       { rarity: 'divine', ingredients: 'Coconut x1, Beanstalk x1' },
-      { rarity: 'prismatic', ingredients: 'Bone Blossom x4, Pumpkin x1' }
+      { rarity: 'divine', ingredients: 'Sugarglaze x1, Beanstalk x1' },
+      { rarity: 'divine', ingredients: 'Pepper x1, Coconut x1, Elder Strawberry x2, Celestiberry x1' },
+      { rarity: 'divine', ingredients: 'Sugar Apple x3, Pumpkin x1' },
+      { rarity: 'divine', ingredients: 'Burning Bud x1, Prickly Pear x1, Bone Blossom x1, Giant Pinecone x1, Coconut x1' },
+      { rarity: 'prismatic', ingredients: 'Bone Blossom x4, Pumpkin x1' },
+      { rarity: 'prismatic', ingredients: 'Bone Blossom x2, Coconut x1' }
     ],
     rewards: 'Divine rewards, Prismatic items'
   },
@@ -95,11 +139,15 @@ export const recipes: Recipe[] = [
     cookTime: '7 minutes',
     maxRarity: 'prismatic',
     variants: [
-      { rarity: 'rare', ingredients: 'Pepper x1, Corn x1, Tomato x1, Mint x1' },
-      { rarity: 'legendary', ingredients: 'Corn x1, Tomato x2, Ember Lily x2' },
-      { rarity: 'mythical', ingredients: 'Pepper x1, Corn x1, Tomato x1, Bone Blossom x1' },
+      { rarity: 'legendary', ingredients: 'Pepper x1, Corn x1, Tomato x1' },
+      { rarity: 'legendary', ingredients: 'Bell Pepper x2, Violet Corn x1' },
+      { rarity: 'mythical', ingredients: 'Pepper x1, Corn x1, Tomato x1, Bone Blossom x1, Beanstalk x1' },
+      { rarity: 'mythical', ingredients: 'Pepper x1, Corn x1, Tomato x1, Beanstalk x2' },
+      { rarity: 'mythical', ingredients: 'Sugar Apple x1, Pepper x1, Corn x1, Tomato x1, Sugar Apple x1' },
       { rarity: 'divine', ingredients: 'Corn x1, Tomato x1, Bone Blossom x3' },
-      { rarity: 'prismatic', ingredients: 'Bone Blossom x3, Tomato x1, Corn x1' }
+      { rarity: 'divine', ingredients: 'Violet Corn x1, Tomato x1, Elder Strawberry x1, Bone Blossom x2' },
+      { rarity: 'prismatic', ingredients: 'Sugarglaze x1, Grand Tomato x1, Bone Blossom x3' },
+      { rarity: 'prismatic', ingredients: 'Sugarglaze x1, Tomato x1, Bone Blossom x3' }
     ],
     rewards: 'Divine rewards, Prismatic items'
   },
@@ -110,10 +158,25 @@ export const recipes: Recipe[] = [
     cookTime: '8 minutes',
     maxRarity: 'prismatic',
     variants: [
+      { rarity: 'normal', ingredients: 'Corn x2, Watermelon x1' },
+      { rarity: 'normal', ingredients: 'Pepper x1, Banana x1' },
+      { rarity: 'normal', ingredients: 'Bone Blossom x2, Pepper x1, Corn x1' },
+      { rarity: 'normal', ingredients: 'Bone Blossom x1, Violet Corn x1' },
       { rarity: 'legendary', ingredients: 'Pepper x1, Corn x1' },
-      { rarity: 'mythical', ingredients: 'Pepper x2, Corn x1' },
+      { rarity: 'legendary', ingredients: 'Violet Corn x2, Lucky Bamboo x2, Bone Blossom x1' },
+      { rarity: 'mythical', ingredients: 'Ember Lily x1, Corn x1' },
+      { rarity: 'mythical', ingredients: 'Corn x1, Bone Blossom x1' },
+      { rarity: 'mythical', ingredients: 'Pepper x1, Banana x1' },
+      { rarity: 'mythical', ingredients: 'Pepper x1, Violet Corn x1' },
+      { rarity: 'mythical', ingredients: 'Cocovine x1, Bone Blossom x1, Lumira x1, Banana x1, Kiwi x1' },
       { rarity: 'divine', ingredients: 'Ember Lily x4, Corn x1' },
-      { rarity: 'prismatic', ingredients: 'Bone Blossom x4, Corn x1' }
+      { rarity: 'divine', ingredients: 'Bone Blossom x2, Beanstalk x2, Corn x1' },
+      { rarity: 'divine', ingredients: 'Bone Blossom x3, Banana x1, Blood Banana x1' },
+      { rarity: 'divine', ingredients: 'Bone Blossom x3, Lucky Bamboo x1, Violet Corn x1' },
+      { rarity: 'divine', ingredients: 'Beanstalk x3, Pepper x1, Corn x1' },
+      { rarity: 'prismatic', ingredients: 'Corn x1, Bone Blossom x4' },
+      { rarity: 'prismatic', ingredients: 'Violet Corn x1, Bone Blossom x3' },
+      { rarity: 'prismatic', ingredients: 'Sugarglaze x1, Bone Blossom x4' }
     ],
     rewards: 'Divine rewards, Prismatic items'
   },
@@ -124,10 +187,18 @@ export const recipes: Recipe[] = [
     cookTime: '6 minutes',
     maxRarity: 'prismatic',
     variants: [
-      { rarity: 'mythical', ingredients: 'Tranquil Bloom x1, Starfruit x1, Coconut x1' },
-      { rarity: 'legendary', ingredients: 'Coconut x1, Maple Apple x1, Banana x3' },
+      { rarity: 'normal', ingredients: 'Pumpkin x1, Watermelon x1' },
+      { rarity: 'normal', ingredients: 'Strawberry x1, Coconut x1' },
+      { rarity: 'legendary', ingredients: 'Coconut x1, Apple x1, Dragon Fruit x1, Mango x1' },
+      { rarity: 'mythical', ingredients: 'Coconut x1, Pineapple x1' },
+      { rarity: 'mythical', ingredients: 'Sugar Apple x1, Bone Blossom x1' },
+      { rarity: 'mythical', ingredients: 'Grape x1, Coconut x1, Dragon Fruit x1, Cactus x1, Peach x1' },
+      { rarity: 'mythical', ingredients: 'Coconut x1, Sugarglaze x1' },
       { rarity: 'divine', ingredients: 'Sugar Apple x1, Coconut x1' },
-      { rarity: 'prismatic', ingredients: 'Bone Blossom x3, Sugar Apple x1, Coconut x1' }
+      { rarity: 'divine', ingredients: 'Corn x1, Crown Melon x1, Sugar Apple x3' },
+      { rarity: 'prismatic', ingredients: 'Sugar Apple x1, Coconut x1, Bone Blossom x3' },
+      { rarity: 'prismatic', ingredients: 'Sugar Apple x1, Sugarglaze x1, Bone Blossom x3' },
+      { rarity: 'prismatic', ingredients: 'Taco Fern x1, Sugarglaze x1, Bone Blossom x3' }
     ],
     rewards: 'Divine rewards, Prismatic items'
   },
@@ -138,11 +209,17 @@ export const recipes: Recipe[] = [
     cookTime: '6 minutes',
     maxRarity: 'prismatic',
     variants: [
-      { rarity: 'rare', ingredients: 'Watermelon x1, Corn x1' },
-      { rarity: 'legendary', ingredients: 'Banana x1, Watermelon x1' },
-      { rarity: 'mythical', ingredients: 'Banana x1, Sugar Apple x1' },
+      { rarity: 'uncommon', ingredients: 'Corn x1, Blueberry x1' },
+      { rarity: 'uncommon', ingredients: 'Corn x1, Strawberry x1' },
+      { rarity: 'legendary', ingredients: 'Banana x2' },
+      { rarity: 'legendary', ingredients: 'Banana x1, Lingon Berry x1' },
+      { rarity: 'mythical', ingredients: 'Sugar Apple x1, Banana x1' },
+      { rarity: 'mythical', ingredients: 'Sugar Apple x1, Corn x1' },
       { rarity: 'divine', ingredients: 'Sugar Apple x1, Sugarglaze x1' },
-      { rarity: 'prismatic', ingredients: 'Sugar Apple x1, Sugarglaze x1, Bone Blossom x3' }
+      { rarity: 'divine', ingredients: 'Sugar Apple x3, Corn x1' },
+      { rarity: 'divine', ingredients: 'Sugar Apple x2, Banana x1, Tranquil Bloom x1, Bone Blossom x1' },
+      { rarity: 'prismatic', ingredients: 'Sugarglaze x1, Sugar Apple x1, Bone Blossom x3' },
+      { rarity: 'prismatic', ingredients: 'Banana x1, Sugar Apple x1, Bone Blossom x3' }
     ],
     rewards: 'Divine rewards, Prismatic items'
   },
@@ -154,10 +231,16 @@ export const recipes: Recipe[] = [
     maxRarity: 'divine',
     variants: [
       { rarity: 'normal', ingredients: 'Bamboo x4, Corn x1' },
-      { rarity: 'rare', ingredients: 'Bamboo x1, Corn x2, Spike Mango x1' },
+      { rarity: 'rare', ingredients: 'Bamboo x1, Corn x2, Spiked Mango x1' },
+      { rarity: 'rare', ingredients: 'Corn x1, Tomato x2, Bamboo x1' },
       { rarity: 'legendary', ingredients: 'Bamboo x3, Corn x1, Maple Apple x1' },
+      { rarity: 'legendary', ingredients: 'Bamboo x3, Hive Fruit x1, Corn x1' },
+      { rarity: 'legendary', ingredients: 'Bamboo x1, Lilac x1, Lucky Bamboo x1, Mango x1, Violet Corn x1' },
       { rarity: 'mythical', ingredients: 'Bamboo x2, Corn x1, Bone Blossom x2' },
-      { rarity: 'divine', ingredients: 'Bamboo x2, Corn x1, Bone Blossom x3' }
+      { rarity: 'mythical', ingredients: 'Sugar Apple x3, Bamboo x1, Corn x1' },
+      { rarity: 'mythical', ingredients: 'Corn x1, Bamboo x1, Elder Strawberry x3' },
+      { rarity: 'mythical', ingredients: 'Bamboo x1, Corn x1, Bone Blossom x2' },
+      { rarity: 'divine', ingredients: 'Corn x1, Bamboo x1, Bone Blossom x3' }
     ],
     rewards: 'Divine rewards'
   },
@@ -169,12 +252,33 @@ export const recipes: Recipe[] = [
     maxRarity: 'prismatic',
     isMeta: true,
     variants: [
-      { rarity: 'common', ingredients: 'Strawberry x1, Pepper x1, Tomato x1, Corn x1' },
-      { rarity: 'legendary', ingredients: 'Corn x1, Tomato x1, Pepper x1, Sugar Apple x1' },
-      { rarity: 'mythical', ingredients: 'Pepper x1, Tomato x1, Sugar Apple x1, Corn x1' },
-      { rarity: 'divine', ingredients: 'Sugar Apple x1, Corn x1, Bone Blossom x1' },
-      { rarity: 'prismatic', ingredients: 'Banana x1, Sugar Apple x1, Bone Blossom x3' }
+      { rarity: 'normal', ingredients: 'Strawberry x1, Pepper x1, Corn x1, Tomato x1' },
+      { rarity: 'legendary', ingredients: 'Corn x2, Apple x2, Pepper x1' },
+      { rarity: 'legendary', ingredients: 'Bell Pepper x1, Pepper x1, Tomato x1, Corn x1, Peach x1' },
+      { rarity: 'legendary', ingredients: 'Cauliflower x1, Paradise Petal x1, Blood Banana x2, Pepper x1' },
+      { rarity: 'legendary', ingredients: 'Giant Pinecone x1, Corn x1, Apple x1, Pepper x1, Strawberry x1' },
+      { rarity: 'legendary', ingredients: 'Bell Pepper x1, Pepper x1, Tomato x1, Corn x1, Pineapple x1' },
+      { rarity: 'mythical', ingredients: 'Pepper x1, Tomato x1, Corn x1, Sugar Apple x2' },
+      { rarity: 'mythical', ingredients: 'Giant Pinecone x1, Apple x1, Pepper x1, Banana x1, Mushroom x1' },
+      { rarity: 'mythical', ingredients: 'Sugar Apple x1, Pepper x1, Banana x1' },
+      { rarity: 'divine', ingredients: 'Sugar Apple x1, Corn x1, Bone Blossom x3' },
+      { rarity: 'divine', ingredients: 'Sugar Apple x3, Corn x1, Pepper x1' },
+      { rarity: 'divine', ingredients: 'Pepper x1, Corn x1, Sugar Apple x1, Giant Pinecone x2' },
+      { rarity: 'prismatic', ingredients: 'Violet Corn x1, Sugar Apple x1, Bone Blossom x3' },
+      { rarity: 'prismatic', ingredients: 'Banana x1, Beanstalk x1, Bone Blossom x3' }
     ],
     rewards: 'All Prismatic Rewards, 50,000+ Sheckles'
+  },
+  {
+    id: 'soup',
+    name: 'Soup',
+    emoji: '🍲',
+    cookTime: '5 minutes',
+    maxRarity: 'uncommon',
+    variants: [
+      { rarity: 'common', ingredients: 'Carrot x1' },
+      { rarity: 'uncommon', ingredients: 'Sugar Apple x1, Watermelon x1' }
+    ],
+    rewards: 'Basic cooking rewards, Common ingredients'
   }
 ];
